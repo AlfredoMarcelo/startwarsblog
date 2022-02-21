@@ -1,7 +1,8 @@
+import json
 from flask import Flask, render_template,jsonify, request
 from flask_cors import CORS
 from flask_migrate import Migrate
-from models import db
+from models import db,Character,Planet,User
 
 app = Flask(__name__)
 
@@ -19,25 +20,35 @@ CORS(app)
 def index():
     return render_template("index.html")
 
-@app.route('/api/people')
-def people():
-    return render_template("index.html")
+@app.route('/api/characters', methods=['GET'])
+def characters():
+    characters = Character.query.all()
+    characters = list(map(lambda character:character.serialize(),characters))
+    return jsonify(characters,{"msg":"se consiguio con exito"}),200
 
-@app.route('/api/people/<int:people_id>')
-def single_people(people_id):
-    return render_template("index.html")
+@app.route('/api/characters/<int:character_id>', methods=['GET'])
+def single_character(character_id):
+    character = Character.query.get(character_id)
+    """ character = Character.query.filter_by(character_id=character_id).first()
+    character = list(map(lambda character:character.serialize(),character)) """
+    return jsonify({"character":character.serialize()}),200
 
-@app.route('/api/planets')
+@app.route('/api/planets', methods=['GET'])
 def planets():
-    return render_template("index.html")
+    planets = Planet.query.all()
+    planets = list(map(lambda planet:planet.serialize(),planets))
+    return jsonify(planets,{"msg":"Se consiguieron los planetas con exito"}),200
 
 @app.route('/api/planets/<int:planet_id>')
 def single_planet(planet_id):
-    return render_template("index.html")
+    planet = Planet.query.get(planet_id)
+    return jsonify({"planet":planet.serialize()}),200
 
 @app.route('/api/users')
 def users():
-    return render_template("index.html")
+    users = User.query.all()
+    users = list(map(lambda user:user.serialize(),users))
+    return jsonify(users,{"msg":"Usuarios conseguidos con exito"}),200
 
 @app.route('/api/users/favorites')
 def favorites():
