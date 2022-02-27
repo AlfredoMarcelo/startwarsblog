@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 flask = "*"
+<<<<<<< HEAD
+=======
+flask-sqlalchemy = "*"
+>>>>>>> 2ea77c13bdc063445210d09dd042d21dc9252697
 flask-migrate = "*"
 flask-cors = "*"
 

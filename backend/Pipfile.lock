@@ -1,7 +1,11 @@
 {
     "_meta": {
         "hash": {
+<<<<<<< HEAD
             "sha256": "761238082c7860c250a79103fafff655cca1df0523c2844553879be963e42316"
+=======
+            "sha256": "b56b6f1c99a7062ab0827f78e794370228dc906073efb88e27c3d8b579679a85"
+>>>>>>> 2ea77c13bdc063445210d09dd042d21dc9252697
         },
         "pipfile-spec": 6,
         "requires": {
@@ -69,7 +73,11 @@
                 "sha256:2bda44b43e7cacb15d4e05ff3cc1f8bc97936cc464623424102bfc2c35e95912",
                 "sha256:f12c3d4cc5cc7fdcc148b9527ea05671718c3ea45d50c7e732cceb33f574b390"
             ],
+<<<<<<< HEAD
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+=======
+            "index": "pypi",
+>>>>>>> 2ea77c13bdc063445210d09dd042d21dc9252697
             "version": "==2.5.1"
         },
         "greenlet": {
@@ -130,7 +138,11 @@
                 "sha256:fa877ca7f6b48054f847b61d6fa7bed5cebb663ebc55e018fda12db09dcc664c",
                 "sha256:fdcec0b8399108577ec290f55551d926d9a1fa6cad45882093a7a07ac5ec147b"
             ],
+<<<<<<< HEAD
             "markers": "python_version >= '3' and platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32')))))",
+=======
+            "markers": "python_version >= '3' and (platform_machine == 'aarch64' or (platform_machine == 'ppc64le' or (platform_machine == 'x86_64' or (platform_machine == 'amd64' or (platform_machine == 'AMD64' or (platform_machine == 'win32' or platform_machine == 'WIN32'))))))",
+>>>>>>> 2ea77c13bdc063445210d09dd042d21dc9252697
             "version": "==1.1.2"
         },
         "itsdangerous": {
@@ -208,7 +220,11 @@
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
                 "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
             ],
+<<<<<<< HEAD
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+=======
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
+>>>>>>> 2ea77c13bdc063445210d09dd042d21dc9252697
             "version": "==1.16.0"
         },
         "sqlalchemy": {
